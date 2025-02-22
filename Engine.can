@@ -1,0 +1,42 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Engine_Message EM;
+  msTimer engine_timer;
+  
+}
+on start 
+{
+  setTimer(engine_timer,500);
+  write("Engine ECU is initialisation");
+}
+on envVar ENV_Engine
+ {
+  if ( @ENV_Engine==1)
+  {
+    EM.Engine_Signal=@ENV_Engine;
+    output(EM);
+    write("Engine is turned on");
+  }
+  
+  else 
+  {
+    EM.Engine_Signal=@ENV_Engine;
+    output(EM);
+    write("Engine is turned off");
+  }
+}
+on timer engine_timer
+{
+  output (EM);
+  setTimer(engine_timer,500);
+}
+  
+  
+    
+  

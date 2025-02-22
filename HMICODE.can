@@ -1,0 +1,173 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Engine_Message EM;
+  message FLW_Message FLWP;
+  message FRW_Message FRWP;
+  message RLW_Message RLWP;
+  message RRW_Message RRWP;
+  message HMI_FLW_Message HMIFL;
+  message HMI_FRW_Message HMIFLR;
+  message HMI_RLW_Message HMIRL;
+  message HMI_RRW_Message HMIRR;
+  
+ 
+}
+on message FLW_Message
+{
+  if (FLWP.FLW_Signal< 15)
+  {
+    HMIFL.FLW_High = 0;
+    HMIFL.FLW_Medium = 0;
+    HMIFL.FLW_Low = 1;
+    output(HMIFL);
+    write("Warning: The Tire Pressure is Low For FLW");
+    
+  }
+  else if((FLWP.FLW_Signal>= 16) && (FLWP.FLW_Signal<= 25)
+  {
+    HMIFL.FLW_High = 0;
+    HMIFL.FLW_Medium = 1;
+    HMIFL.FLW_Low = 0;
+    output(HMIFL);
+    write("Warning: The Tire Pressure is Medium For FLW");
+  }
+  else 
+  {
+    HMIFL.FLW_High = 1;
+    HMIFL.FLW_Medium = 0;
+    HMIFL.FLW_Low = 0;
+    output(HMIFL);
+    write("Warning: The Tire Pressure is High For FLW");
+  }
+}
+    
+on envVar ENV_FLW
+{
+  FLWP.FLW_Signal = @ENV_FLW;
+  output(FLWP);
+}
+ on message FRW_Message
+{
+  if (FRWP.FRW_Signal<= 15)
+  {
+    HMIFL.FRW_High = 0;
+    HMIFL.FRW_Medium = 0;
+    HMIFL.FRW_Low = 1;
+    output(HMIFLR);
+    write("Warning: The Tire Pressure is Low For FRW");
+    
+  }
+  else if((FRWP.FRW_Signal> 16) && (FRWP.FRW_Signal<25))
+  {
+    HMIFLR.FRW_High = 0;
+    HMIFLR.FRW_Medium = 1;
+    HMIFLR.FRW_Low = 0;
+    output(HMIFLR);
+    write("Warning: The Tire Pressure is Medium For FRW");
+   }
+   else 
+  {
+    HMIFLR.FRW_High = 1;
+    HMIFLR.FRW_Medium = 0;
+    HMIFLR.FRW_Low = 0;
+    output(HMIFLR);
+    write("Warning: The Tire Pressure is High For FRW");
+  }
+}
+on envVar ENV_FRW
+{
+  FRWP.FRW_Signal=@ENV_FRW ;
+  output(FRWP);
+}
+on message RLW_Message
+{
+  if (RLWP.RLW_Signal<=15)
+  {
+    HMIRL.RLW_High=0;
+    HMIRL.RLW_Medium = 0;
+    HMIRL.RLW_Low = 1;
+    output(HMIRL);
+    write("Warning: The Tire Pressure is Low For RLW");
+  }
+  else if((RLWP.RLW_Signal>= 16) && (RLWP.RLW_Signal<=25))
+  {
+    HMIRL.RLW_High = 0;
+    HMIRL.RLW_Medium = 1;
+    HMIRL.RLW_Low = 0;
+    output(HMIRL);
+    write("Warning: The Tire Pressure is Medium For RLW");
+   }
+   else 
+  {
+    HMIRL.RLW_High = 1;
+    HMIRL.RLW_Medium = 0;
+    HMIRL.RLW_Low = 0;
+    output(HMIRL);
+    write("Warning: The Tire Pressure is High For RLW");
+  }
+}
+on envVar ENV_RLW
+{
+  RLWP.RLW_Signal=@ENV_RLW ;
+  output(RLWP);
+}
+on message RRW_Message
+{
+  if (RRWP.RRW_Signal<=15)
+  {
+    HMIRR.RRW_High=0;
+    HMIRR.RRW_Medium = 0;
+    HMIRR.RRW_Low = 1;
+    output(HMIRR);
+    write("Warning: The Tire Pressure is Low For RRW");
+  }
+  else if((RRWP.RRW_Signal> 16) && (RRWP.RRW_Signal<25))
+  {
+    HMIRR.RLW_High = 0;
+    HMIRR.RRW_Medium = 1;
+    HMIRR.RRW_Low = 0;
+    output(HMIRR);
+    write("Warning: The Tire Pressure is Medium For RRW");
+   }
+   else 
+  {
+    HMIRR.RRW_High = 1;
+    HMIRR.RRW_Medium = 0;
+    HMIRR.RRW_Low = 0;
+    output(HMIRR);
+    write("Warning: The Tire Pressure is High For RRW");
+  }
+}  
+on envVar ENV_RRW  
+  {
+  RRWP.RRW_Signal=@ENV_RRW ;
+  output(RRWP);
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

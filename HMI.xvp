@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="HMI">
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl11" ControlName="LED Control 11">
+      <Property Name="Name">LEDControl11</Property>
+      <Property Name="Size">48, 48</Property>
+      <Property Name="Location">632, 122</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleDown</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FRW_Message;FRW_low;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">49</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl9" ControlName="LED Control 9">
+      <Property Name="Name">LEDControl9</Property>
+      <Property Name="Size">47, 47</Property>
+      <Property Name="Location">640, 319</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleDown</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RRW_Message;RRW_Low;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">48</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl7" ControlName="LED Control 7">
+      <Property Name="Name">LEDControl7</Property>
+      <Property Name="Size">46, 46</Property>
+      <Property Name="Location">127, 308</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleDown</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RLW_Message;RLW_Low;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">47</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl12" ControlName="LED Control 12">
+      <Property Name="Name">LEDControl12</Property>
+      <Property Name="Size">48, 48</Property>
+      <Property Name="Location">127, 220</Property>
+      <Property Name="UsedLEDColorOn">YellowGreen</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleUp</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RLW_Message;RLW_High;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">46</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl10" ControlName="LED Control 10">
+      <Property Name="Name">LEDControl10</Property>
+      <Property Name="Size">48, 48</Property>
+      <Property Name="Location">636, 220</Property>
+      <Property Name="UsedLEDColorOn">YellowGreen</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleUp</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RRW_Message;RRW_High;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">45</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl8" ControlName="LED Control 8">
+      <Property Name="Name">LEDControl8</Property>
+      <Property Name="Size">50, 50</Property>
+      <Property Name="Location">632, 34</Property>
+      <Property Name="UsedLEDColorOn">YellowGreen</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleUp</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FRW_Message;FRW_High;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">44</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl4" ControlName="LED Control 4">
+      <Property Name="Name">LEDControl4</Property>
+      <Property Name="Size">51, 51</Property>
+      <Property Name="Location">636, 262</Property>
+      <Property Name="UsedLEDColorOn">Gold</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">Rectangle</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RRW_Message;RRW_Medium;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">43</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl3" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl3</Property>
+      <Property Name="Size">46, 46</Property>
+      <Property Name="Location">632, 81</Property>
+      <Property Name="UsedLEDColorOn">Gold</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">Rectangle</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FRW_Message;FRW_Medium;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">42</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl2</Property>
+      <Property Name="Size">49, 49</Property>
+      <Property Name="Location">127, 262</Property>
+      <Property Name="UsedLEDColorOn">Gold</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">Rectangle</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_RLW_Message;RLW_Medium;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">41</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl2" ControlName="LCD Control 2">
+      <Property Name="Name">LCDControl2</Property>
+      <Property Name="Size">103, 86</Property>
+      <Property Name="Location">482, 237</Property>
+      <Property Name="NumberIntDigits">2</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;TPMS_ECU;RRW_Message;RRW_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl3" ControlName="LCD Control 3">
+      <Property Name="Name">LCDControl3</Property>
+      <Property Name="Size">107, 86</Property>
+      <Property Name="Location">203, 237</Property>
+      <Property Name="NumberIntDigits">2</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;TPMS_ECU;RLW_Message;RLW_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl4" ControlName="LCD Control 4">
+      <Property Name="Name">LCDControl4</Property>
+      <Property Name="Size">103, 77</Property>
+      <Property Name="Location">482, 68</Property>
+      <Property Name="NumberIntDigits">2</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;TPMS_ECU;FRW_Message;FRW_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl5" ControlName="LED Control 5">
+      <Property Name="Name">LEDControl5</Property>
+      <Property Name="Size">48, 48</Property>
+      <Property Name="Location">129, 133</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleDown</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FLW_Message;FLW_Low;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">37</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">46, 46</Property>
+      <Property Name="Location">129, 90</Property>
+      <Property Name="UsedLEDColorOn">Gold</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">Rectangle</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FLW_Message;FLW_Medium;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">36</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl6" ControlName="LED Control 6">
+      <Property Name="Name">LEDControl6</Property>
+      <Property Name="Size">50, 50</Property>
+      <Property Name="Location">127, 34</Property>
+      <Property Name="UsedLEDColorOn">YellowGreen</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="LEDStyle">TriangleUp</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;;HMI_FLW_Message;FLW_High;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">35</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl1" ControlName="LCD Control">
+      <Property Name="Name">LCDControl1</Property>
+      <Property Name="Size">107, 77</Property>
+      <Property Name="Location">203, 68</Property>
+      <Property Name="NumberIntDigits">2</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;tpms1;TPMS_ECU;FLW_Message;FLW_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">882, 432</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
